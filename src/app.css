@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+:root {
+	--background-color: #f0f0f0;
+	--text-color: #7b18b3;
+}
+
+code {
+	color: var(--text-color);
+}
+
+blockquote {
+	@apply border-l-4 border-purple-800 bg-gray-100 px-2 py-2 text-purple-900;
+}
+
+p a {
+	@apply italic underline;
+}
+
+body {
+	background-color: var(--background-color);
+	/* color: var(--text-color); */
+	height: 100vh;
+}
+
+main {
+	@apply px-10 py-5 min-h-[80vh] overflow-auto;
+}
+
+main h1 {
+	@apply text-center text-2xl;
+}
+
+ul {
+	@apply px-5;
+}
+
+li {
+	@apply list-disc;
+}
+
+.task-list-item {
+	@apply list-none;
+}
