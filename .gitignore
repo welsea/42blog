@@ -1,0 +1,4 @@
+# builds
+.svelte-kit/
+node_modules/
+pnpm-local.yaml

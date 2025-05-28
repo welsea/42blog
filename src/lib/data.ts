@@ -20,7 +20,6 @@ export async function getAllPosts(): Promise<Post[]> {
 			posts.push(post);
 		}
 	}
-	console.log(posts);
 	posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 	return posts;
@@ -45,6 +44,6 @@ export async function getTagsCategories() {
 
 	return {
 		tags: Array.from(tmptags),
-		categories: Array.from(tmpcategories)
+		category:Array.from(tmpcategories)
 	};
 }

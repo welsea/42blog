@@ -3,6 +3,70 @@
 :root {
 	--background-color: #f0f0f0;
 	--text-color: #7b18b3;
+
+	--TEXT-HEAVY:rgb(84, 20, 132);
+	--TEXT-LIGHT:rgba(74, 18, 117, 0.62)
+}
+
+.text-color-heavy{
+	color:var(--TEXT-HEAVY)
+}
+
+.text-color-light{
+	color:var(--TEXT-LIGHT)
+}
+
+body {
+	@apply font-serif;
+	background-color: var(--background-color);
+	/* color: var(--text-color); */
+	height: 100vh;
+}
+
+.prose {
+	max-width: 70ch;
+	margin: 0 auto;
+}
+
+.prose{
+	@apply text-base/7 w-11/12 md:w-8/12 pb-30 ;
+}
+
+
+.prose a {
+	@apply italic underline underline-offset-3;
+}
+
+.prose p {
+	@apply py-3;
+}
+
+.prose h1 {
+	@apply text-2xl;
+}
+
+header {
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+}
+
+.meta {
+	color: #666;
+	font-size: 0.9rem;
+	display: flex;
+	gap: 1rem;
+}
+
+ul {
+	padding: 0 3rem;
+}
+
+li {
+	list-style-type: disc;
+}
+
+.task-list-item {
+	list-style-type: none;
 }
 
 code {
@@ -11,34 +75,4 @@ code {
 
 blockquote {
 	@apply border-l-4 border-purple-800 bg-gray-100 px-2 py-2 text-purple-900;
-}
-
-p a {
-	@apply italic underline;
-}
-
-body {
-	background-color: var(--background-color);
-	/* color: var(--text-color); */
-	height: 100vh;
-}
-
-main {
-	@apply px-10 py-5 min-h-[80vh] overflow-auto;
-}
-
-main h1 {
-	@apply text-center text-2xl;
-}
-
-ul {
-	@apply px-5;
-}
-
-li {
-	@apply list-disc;
-}
-
-.task-list-item {
-	@apply list-none;
 }
