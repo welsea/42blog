@@ -1,4 +1,7 @@
 # builds
 .svelte-kit/
 node_modules/
-pnpm-local.yaml
+pnpm-lock.yaml
+
+.env
+.env.local
